@@ -1,5 +1,7 @@
 <?php
 namespace Haa\framework;
+use Haa\framework\Route;
+
 class ResponseHandler implements ResponseHandler_Interface
 {
     //protected $body = [];

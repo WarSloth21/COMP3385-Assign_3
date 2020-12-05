@@ -9,7 +9,7 @@
 		<nav>
 			<a href="index.php?controller=Index"><img src="images/logo.png" alt="Quwius"></a>
 			<ul method='get'>
-				<li><a href="index.php?controller=Courses">Courses</a></li>
+				<li><a href="'.BASEPATH.'index.php?controller=Courses">Courses</a></li>
 				<li><a href="index.php?controller=Streams">Streams</a></li>
 				<li><a href="index.php?controller=AboutUs">About Us</a></li>
 				<li><a href="index.php?controller=Login">Login</a></li>
