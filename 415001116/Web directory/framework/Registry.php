@@ -1,7 +1,8 @@
 <?php
 namespace Haa\framework;
+use app\handlers;
 use SessionManager;
-use Config;
+require 'config.php';
 
 
 
@@ -20,14 +21,31 @@ abstract class Registry
         return $this->session;
     }
 
-
-    public function doConfiguration (): Config
+    protected function init()
     {
-        if(is_null($this->config))
-        {
-            $this->config = new Config();
-        }
-        return $this->config;
+      
+    }
+
+    public static function run()
+    {
+        $regs = new Registry();
+        $regs->init();
+        $regs->doConfiguration();
+    }
+
+    public function doConfiguration ()
+    {
+        global $root;
+        global $app;
+        global $framework;
+        global $tpl;
+        global $data;
+        echo "hrllo";
+        return $root;
+        return $app;
+        return $framework;
+        return $tpl;
+        return $data;
     }
 
 }
